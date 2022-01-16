@@ -5,7 +5,7 @@
 ```sh
 mkdir build-cppcheck
 
-docker run --rm -t -v "D:/dev/code/cpp-cross-compiling":/src test/cppcheck \
+docker run --rm -t -v "$(pwd -W)":/src test/cppcheck \
 cppcheck \
 src \
 --cppcheck-build-dir="build-cppcheck" \
